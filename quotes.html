@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Posts</title>
+    <link rel="stylesheet" href="quotes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo image -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Reader.html">Books</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="comics.html">Comics</a></li>
+                    <li><a href="#">Quotes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-section">
+            <div class="filter-icon" onclick="toggleFilter()">
+                <i class="fas fa-filter"></i>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="dropdown">
+                <div class="dropdown-icon" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="posts-container">
+        <div class="post">
+            <h2 class="post-title">Existence</h2>
+            <div class="image-holder">
+                <img src="/post1.jpg" alt="Post Image">
+            </div>
+            <div class="post-actions">
+                <i class="fas fa-thumbs-up like-icon"></i>
+                <i class="fas fa-comment comment-icon"></i>
+            </div>
+            <div class="comments-section">
+                <div class="past-comments">
+                    <p>Previous comment 1</p>
+                    <p>Previous comment 2</p>
+                </div>
+                <textarea placeholder="Add a comment..." class="comment-textarea"></textarea>
+                <button class="send-comment-btn">Send</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title">Passion</h2>
+            <div class="image-holder">
+                <img src="/post2.jpg" alt="Post Image">
+            </div>
+            <div class="post-actions">
+                <i class="fas fa-thumbs-up like-icon"></i>
+                <i class="fas fa-comment comment-icon"></i>
+            </div>
+            <div class="comments-section">
+                <div class="past-comments">
+                    <p>Previous comment 1</p>
+                    <p>Previous comment 2</p>
+                </div>
+                <textarea placeholder="Add a comment..." class="comment-textarea"></textarea>
+                <button class="send-comment-btn">Send</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title">Wish</h2>
+            <div class="image-holder">
+                <img src="/post3.jpg" alt="Post Image">
+            </div>
+            <div class="post-actions">
+                <i class="fas fa-thumbs-up like-icon"></i>
+                <i class="fas fa-comment comment-icon"></i>
+            </div>
+            <div class="comments-section">
+                <div class="past-comments">
+                    <p>Previous comment 1</p>
+                    <p>Previous comment 2</p>
+                </div>
+                <textarea placeholder="Add a comment..." class="comment-textarea"></textarea>
+                <button class="send-comment-btn">Send</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title">Failure</h2>
+            <div class="image-holder">
+                <img src="post4.jpg" alt="Post Image">
+            </div>
+            <div class="post-actions">
+                <i class="fas fa-thumbs-up like-icon"></i>
+                <i class="fas fa-comment comment-icon"></i>
+            </div>
+            <div class="comments-section">
+                <div class="past-comments">
+                    <p>Previous comment 1</p>
+                    <p>Previous comment 2</p>
+                </div>
+                <textarea placeholder="Add a comment..." class="comment-textarea"></textarea>
+                <button class="send-comment-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="quotes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('2.png');
+    background-size: cover; /* Make the background image cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Use column direction to stack navbar and content */
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #e67600; /* Thick orange background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Double the height */
+    box-sizing: border-box;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure navbar is above other content */
+}
+
+.logo {
+    height: 50px; /* Adjust logo size */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px; /* Increase font size */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropbtn:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: orange; /* Orange on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the writer's space div */
+    margin-top: 140px; /* Add margin-top to account for the increased navbar height */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.writer-space {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Apply glassmorphism effect */
+    -webkit-backdrop-filter: blur(10px); /* Apply glassmorphism effect for Safari */
+    padding: 20px;
+    width: 500px; /* Set width to 500px */
+    height: calc(80vh - 130px); /* Adjust height to account for navbar and margin */
+    margin-bottom: 10px; /* Add margin to the bottom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.writer-space:hover {
+    transform: translateY(-5px); /* Slight 3D hover effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: auto;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle; /* Align checkbox with text */
+}
+
+button {
+    background-color: orange; /* Change button color to orange */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+.acknowledge-group {
+    display: flex;
+    align-items: center; /* Align checkbox and text */
+}
+
+.acknowledge-text {
+    font-size: 12px;
+    color: grey;
+    display: inline; /* Display inline to align with checkbox */
+}
+
+.acknowledge-text a {
+    color: grey;
+    text-decoration: none;
+}
+
+.acknowledge-text a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px;
+}
+
+.next-btn {
+    width: 100px;
+    background-color: orange; /* Change button color to orange */
+}
+
+.next-btn:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}

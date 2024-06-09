@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Page</title>
+    <link rel="stylesheet" href="comics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo image -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Reader.html">Books</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="quotes.html">Quotes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-section">
+            <div class="filter-icon" onclick="toggleFilter()">
+                <i class="fas fa-filter"></i>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="dropdown">
+                <div class="dropdown-icon" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="close-btn" onclick="toggleFilter()">×</div>
+        <div class="filter-group">
+            <h3>Category</h3>
+            <label><input type="checkbox" name="category" value="fiction"> Fiction</label>
+            <label><input type="checkbox" name="category" value="non-fiction"> Non-Fiction</label>
+        </div>
+        <div class="filter-group">
+            <h3>Story Type</h3>
+            <label><input type="checkbox" name="Story Type" value="short story"> Short Story</label>
+            <label><input type="checkbox" name="Story Type" value="long story"> Long Story</label>
+        </div>
+        <div class="filter-group">
+            <h3>Language</h3>
+            <label><input type="checkbox" name="Language" value="english"> English</label>
+            <label><input type="checkbox" name="Language" value="telugu"> Telugu</label>
+            <label><input type="checkbox" name="Language" value="kannada"> Kannada</label>
+            <label><input type="checkbox" name="Language" value="hindi"> Hindi</label>
+        </div>
+    </div>
+    <main>
+        <section class="comics-section">
+            <div class="comics-list">
+                <div class="comic">
+                    <h2>Rise of the Activists</h2>
+                    <p>Description: A thrilling adventure of youth activism...</p>
+                </div>
+                <div class="comic">
+                    <h2>Change Makers</h2>
+                    <p>Description: Follow the journey of real-life heroes...</p>
+                </div>
+                <div class="comic">
+                    <h2>Revolutionary Tales</h2>
+                    <p>Description: An epic tale of social justice warriors...</p>
+                </div>
+                <div class="comic">
+                    <h2>Voices for Equality</h2>
+                    <p>Description: Discover the fight for equality and rights...</p>
+                </div>
+                <div class="comic">
+                    <h2>Unity in Diversity</h2>
+                    <p>Description: A captivating story about diverse communities...</p>
+                </div>
+                <div class="comic">
+                    <h2>Guardians of the Earth</h2>
+                    <p>Description: Unveil the secrets of environmental activism...</p>
+                </div>
+                <div class="comic">
+                    <h2>Empowerment Chronicles</h2>
+                    <p>Description: A fascinating journey through women's empowerment...</p>
+                </div>
+                <div class="comic">
+                    <h2>Peace Builders</h2>
+                    <p>Description: A heroic tale of peace and reconciliation...</p>
+                </div>
+                <div class="comic">
+                    <h2>Freedom Fighters</h2>
+                    <p>Description: An inspiring story about the quest for freedom...</p>
+                </div>
+                <div class="comic">
+                    <h2>Social Warriors</h2>
+                    <p>Description: A gripping saga of those who fight for social change...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="comics.js"></script>
+</body>
+</html>

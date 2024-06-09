@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Space</title>
+    <link rel="stylesheet" href="write.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#"><img src="logo.png" alt="Logo" class="logo"></a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Reader</a>
+                <a href="#">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="writer-space">
+            <h1>Writer's Space</h1>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="form-group">
+                <label for="content-type">Type of Content</label>
+                <select id="content-type" name="content-type">
+                    <option value="story">Story</option>
+                    <option value="long-story">Long Story</option>
+                    <option value="quote">Quote</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="publish-type">How would you like your work to be published?</label>
+                <select id="publish-type" name="publish-type">
+                    <option value="long-story-book">Long Story Book</option>
+                    <option value="short-story-book">Short Story Book</option>
+                    <option value="quote">Quote</option>
+                    <option value="video-animation">Video Animation</option>
+                    <option value="video">Video</option>
+                </select>
+            </div>
+            <div class="form-group acknowledge-group">
+                <input type="checkbox" id="acknowledge" name="acknowledge">
+                <label for="acknowledge" class="acknowledge-text">
+                    I agree with 
+                    <a href="terms-and-conditions.html" target="_blank">terms and conditions</a>.
+                </label>
+            </div>
+            <div class="button-group">
+                <button type="button" class="next-btn" onclick="window.location.href='editor.html'">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

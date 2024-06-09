@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Page</title>
+    <link rel="stylesheet" href="Reader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo image -->
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="comics.html">Comics</a></li>
+                    <li><a href="#">Quotes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-section">
+            <div class="filter-icon" onclick="toggleFilter()">
+                <i class="fas fa-filter"></i>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="dropdown">
+                <div class="dropdown-icon" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#">Settings</a>
+                    <a href="#">Support</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="books-section">
+            <div class="books-list">
+                <div class="book">
+                    <h2>The Social Revolution</h2>
+                    <p>Author: Jane Doe</p>
+                    <p>Description: A fascinating journey into social movements...</p>
+                </div>
+                <div class="book">
+                    <h2>Voices of Change</h2>
+                    <p>Author: John Smith</p>
+                    <p>Description: An intriguing story about grassroots activism...</p>
+                </div>
+                <div class="book">
+                    <h2>Agents of Change</h2>
+                    <p>Author: Maria Garcia</p>
+                    <p>Description: Discover the secrets of impactful advocacy...</p>
+                </div>
+                <div class="book">
+                    <h2>Breaking Barriers</h2>
+                    <p>Author: Robert Lee</p>
+                    <p>Description: A thrilling tale of overcoming societal obstacles...</p>
+                </div>
+                <div class="book">
+                    <h2>The Power of Unity</h2>
+                    <p>Author: Emily Johnson</p>
+                    <p>Description: Explore the adventures in community building...</p>
+                </div>
+                <div class="book">
+                    <h2>Reformers</h2>
+                    <p>Author: Michael Brown</p>
+                    <p>Description: Unveil the mysteries of social reforms...</p>
+                </div>
+                <div class="book">
+                    <h2>Equality and Justice</h2>
+                    <p>Author: Sarah Wilson</p>
+                    <p>Description: An inspiring story about fighting for equality...</p>
+                </div>
+                <div class="book">
+                    <h2>Voices Unheard</h2>
+                    <p>Author: David Martinez</p>
+                    <p>Description: A captivating tale of marginalized voices...</p>
+                </div>
+                <div class="book">
+                    <h2>Pathways to Peace</h2>
+                    <p>Author: Jessica Davis</p>
+                    <p>Description: Dive into the world of peacebuilding initiatives...</p>
+                </div>
+                <div class="book">
+                    <h2>Transforming Society</h2>
+                    <p>Author: William Harris</p>
+                    <p>Description: An epic journey through societal transformation...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
