@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-container {
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .video-container video {
+            width: 100%;
+            height: 500px;
+        }
+        .video-caption {
+            font-size: 1.2em;
+            margin-top: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo image -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="Reader.html">Books</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="comics.html">Comics</a></li>
+                    <li><a href="quotes.html">Quotes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-section">
+            <div class="filter-icon" onclick="toggleFilter()">
+                <i class="fas fa-filter"></i>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="dropdown">
+                <div class="dropdown-icon" onclick="toggleDropdown()">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#">Settings</a>
+                    <a href="#">Support</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="sidebar" class="sidebar">
+            <div class="close-btn" onclick="toggleFilter()">×</div>
+            <h2>Filter Options</h2>
+            <div class="filter-group">
+                <h3>Category</h3>
+                <label><input type="checkbox" name="category" value="fiction"> Fiction</label>
+                <label><input type="checkbox" name="category" value="non-fiction"> Non-Fiction</label>
+            </div>
+            <div class="filter-group">
+                <h3>Story Type</h3>
+                <label><input type="checkbox" name="Story Type" value="short story"> Short Story</label>
+                <label><input type="checkbox" name="Story Type" value="long story"> Long Story</label>
+            </div>
+            <div class="filter-group">
+                <h3>Language</h3>
+                <label><input type="checkbox" name="Language" value="english"> English</label>
+                <label><input type="checkbox" name="Language" value="telugu"> Telugu</label>
+                <label><input type="checkbox" name="Language" value="kannada"> Kannada</label>
+                <label><input type="checkbox" name="Language" value="hindi"> Hindi</label>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video controls autoplay muted>
+                <source src="homevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-caption">Join us at Narratives, where every story has the power to make a difference. Together, we can create a ripple effect of positive change.</div>
+        </div>
+
+        <div class="content">
+            <h1>Let's go through <span>Narratives</span></h1>
+            <p>At Narratives, we believe in the power of storytelling to transform society. Our platform is dedicated to sharing personal narratives about crucial social issues, allowing voices from all walks of life to be heard and understood. Here, multimedia storytelling flourishes, combining text, images, audio, and video to create compelling stories that resonate deeply. <br>
+            <br> Our <bold>mission</bold> is to raise awareness, build empathy, and inspire action. By highlighting marginalized voices and fostering a supportive community, we aim to create a ripple effect of positive change.<br>
+            <br> Our <bold>vision</bold> is a world where every voice is heard and valued, fostering understanding and driving social change through the power of storytelling. We aim to build a global community that raises awareness, builds empathy, and inspires action on critical social issues.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: narratives.hack@gmail.com</p>
+        <p>&copy; 2024 Narratives. All rights reserved.</p>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
